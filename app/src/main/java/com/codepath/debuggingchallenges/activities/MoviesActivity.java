@@ -30,6 +30,7 @@ public class MoviesActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_movies);
+        movies = new ArrayList<Movie>();
         lvMovies = (ListView) findViewById(R.id.lvMovies);
 
         // Create the adapter to convert the array to views
