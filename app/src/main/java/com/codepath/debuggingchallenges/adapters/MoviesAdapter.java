@@ -47,6 +47,9 @@ public class MoviesAdapter extends ArrayAdapter<Movie> {
         if (movieRating > 6) {
             convertView.setBackgroundColor(Color.GREEN);
         }
+        else {
+            convertView.setBackgroundColor(Color.WHITE);
+        }
 
         String ratingText = String.format(resources.getString(R.string.rating), movieRating);
         tvRating.setText(ratingText);
